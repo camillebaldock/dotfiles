@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+# install without user input
+
+echo 'Installed!'
