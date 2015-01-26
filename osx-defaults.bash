@@ -212,7 +212,7 @@ defaults write com.apple.finder NewWindowTarget -string "PfDe"
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
  
 # Finder: show hidden files by default
-defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write com.apple.finder AppleShowAllFiles -bool false
  
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
