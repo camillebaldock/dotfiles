@@ -1,5 +1,7 @@
 #!/bin/bash
 #
-# install without user input
-
-echo 'Installed!'
+echo "Setting up the Dock icons."
+sh ./dock-script.bash
+echo "Setting up OSX defaults."
+sh ./osx-defaults.bash
+echo "Dotfiles installed."
