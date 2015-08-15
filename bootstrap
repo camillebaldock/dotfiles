@@ -5,7 +5,13 @@ sh ./dock-script.bash
 sh ./osx-defaults.bash
 git config --global user.name "Camille Baldock"
 git config --global user.email camille@camillebaldock.co.uk
+
 cp ~/Code/Quantified\ Camille/dashboard/plists/com.camillebaldock.dashboard.plist ~/Library/LaunchAgents/com.camillebaldock.dashboard.plist
 launchctl unload -w ~/Library/LaunchAgents/com.camillebaldock.dashboard.plist
 launchctl load -w ~/Library/LaunchAgents/com.camillebaldock.dashboard.plist
+
+cp ~/Code/Websites/accessibility-tests/plists/com.camillebaldock.accessibility.plist ~/Library/LaunchAgents/com.camillebaldock.accessibility.plist
+launchctl unload -w ~/Library/LaunchAgents/com.camillebaldock.accessibility.plist
+launchctl load -w ~/Library/LaunchAgents/com.camillebaldock.accessibility.plist
+
 echo "Dotfiles installed."
