@@ -1,8 +1,0 @@
-#!/bin/bash
-#
-echo "Setting up the Dock icons."
-sh ./dock-script.bash
-sh ./osx-defaults.bash
-git config --global user.name "Camille Baldock"
-git config --global user.email camille@camillebaldock.co.uk
-echo "Dotfiles installed."
