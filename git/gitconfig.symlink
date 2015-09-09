@@ -1,0 +1,25 @@
+[hub]
+        protocol = https
+[user]
+        name = camilleldn
+        email = camille@camillebaldock.co.uk
+[credential]
+        helper = osxkeychain
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        ui = true
+[core]
+        excludesfile = ~/.gitignore
+        editor = vim
+[apply]
+        whitespace = nowarn
+[mergetool]
+        keepBackup = false
+[difftool]
+        prompt = false
+[help]
+        autocorrect = 1
+[push]
+        default = simple

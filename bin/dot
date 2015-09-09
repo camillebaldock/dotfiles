@@ -12,3 +12,6 @@ $ZSH/osx/dock-setup.sh
 
 # Upgrade homebrew
 brew update
+
+# Run boxen
+boxen
