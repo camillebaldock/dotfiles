@@ -4,3 +4,4 @@
 
 exec $ZSH/osx/set-defaults.sh
 exec $ZSH/osx/dock-setup.sh
+exec $ZSH/osx/heroku-plugins.sh

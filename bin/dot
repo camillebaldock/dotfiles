@@ -9,6 +9,7 @@ export ZSH=$HOME/.dotfiles
 # Set OS X defaults
 $ZSH/osx/set-defaults.sh
 $ZSH/osx/dock-setup.sh
+$ZSH/osx/heroku-plugins.sh
 
 # Upgrade homebrew
 brew update
