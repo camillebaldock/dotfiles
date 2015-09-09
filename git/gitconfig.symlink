@@ -4,14 +4,26 @@
         name = camilleldn
         email = camille@camillebaldock.co.uk
 [credential]
-        helper = osxkeychain
+        helper = /opt/boxen/bin/boxen-git-credential
+[alias]
+        a = add
+        au = add -u
+        c = commit
+        co = checkout
+        commits = !git rev-list HEAD | wc -l
+        d = diff --cached
+        dic = diff --cached
+        l = log --graph --color
+        promote = !$ZSH/bin/git-promote
+        undo = reset --soft HEAD^
+        wtf = !$ZSH/bin/git-wtf
 [color]
         diff = auto
         status = auto
         branch = auto
         ui = true
 [core]
-        excludesfile = ~/.gitignore
+        excludesfile = /opt/boxen/config/git/gitignore
         editor = vim
 [apply]
         whitespace = nowarn
