@@ -11,6 +11,7 @@ $ZSH/osx/set-defaults.sh
 $ZSH/osx/dock-setup.sh
 $ZSH/osx/heroku-plugins.sh
 $ZSH/git/install-commit-hook.sh
+$ZSH/python/pips.sh
 
 # Upgrade homebrew
 brew update
