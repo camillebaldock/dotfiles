@@ -3,7 +3,7 @@
     showIndentGuide: true
     fontFamily: "Menlo"
     invisibles: {}
-    fontSize: 16
+    fontSize: 14
     softWrapAtPreferredLineLength: true
     confirmCheckoutHeadRevision: false
   autocomplete:
@@ -32,6 +32,7 @@
       "source.gfm"
       "text.git-commit"
     ]
+  csscomb: {}
   welcome:
     showOnStartup: false
   whitespace:
