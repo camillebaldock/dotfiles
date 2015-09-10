@@ -47,5 +47,8 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # HTML serve for static websites
 alias htmlserve="python -m SimpleHTTPServer 8000"
 
+# Download heroku config to .env file
+alias getenv="heroku config:pull"
+
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
