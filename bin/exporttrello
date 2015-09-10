@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+print "Exporting Trello tasks"
+require 'trello'
+
+include Trello
+
+Trello.configure do |config|
+  config.developer_public_key = ENV["TRELLO_DEVELOPER_KEY"]
+  config.member_token = ENV["TRELLO_MEMBER_TOKEN"]
+end
+
+File.open("/Users/camillebaldock/Documents/trello.md", 'w') { |file|
+  board = Board.all.find { |board| board.name == ENV["TRELLO_BOARD_NAME"] }
+  lists = board.lists
+  ENV["TRELLO_LIST_NAMES"].split(",").each do |list_name|
+    list = lists.find { |list| list.name == list_name }
+    file.puts("##"+"#{list_name}")
+    file.puts
+    list.cards.each do |card|
+      file.puts(card.name)
+    end
+    file.puts
+  end
+}
+print "Trello tasks exported"
