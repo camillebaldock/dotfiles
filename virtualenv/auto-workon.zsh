@@ -31,5 +31,8 @@ function venv_cd {
    cd "$@" && workon_cwd
 }
 
+# virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+source /opt/boxen/homebrew/bin/virtualenvwrapper.sh
 alias pyworkon="workon_cwd"
 alias pycd="venv_cd"
