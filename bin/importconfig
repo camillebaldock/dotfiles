@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# importconfig
+#
+# Download heroku config and export to environment
+
+heroku config:pull | while read i; do
+  echo export $i >> environment.sh
+done
+
+echo "Values exported"
