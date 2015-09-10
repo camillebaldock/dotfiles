@@ -13,6 +13,8 @@ $ZSH/osx/heroku-plugins.sh
 
 # Upgrade homebrew
 brew update
+brew upgrade --all
+brew cleanup
 
 # Run boxen
 boxen
