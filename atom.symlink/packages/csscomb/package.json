@@ -1,0 +1,460 @@
+{
+  "name": "csscomb",
+  "main": "./lib/csscomb",
+  "version": "0.3.1",
+  "private": true,
+  "description": "Atom Editor plugin for CSScomb, http://csscomb.com",
+  "activationCommands": {
+    "atom-workspace": [
+      "csscomb:run"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bruce/atom-csscomb.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {
+    "csscomb": "^3.1.6",
+    "season": "^5.2.0"
+  },
+  "readme": "# Atom Editor Plugin for CSScomb\n\nSort properties of one or more CSS/SCSS/Less rules using\n[CSScomb](http://csscomb.com/).\n\n## Installation\n\nSee the [Atom docs](http://atom.io/docs/latest/customizing-atom#installing-packages).\n\n```shell\n$ apm install csscomb\n```\n\n## CSScomb Configuration\n\nThe plugin uses the following strategy to determine the CSScomb configuration to use.\n\n* First, it looks for a user configuration; a `csscomb` property in your Atom\n  `config.cson`.\n* Next, it looks for a project configuration; `.csscomb.json` or `.csscomb.cson`\n  in your project root.\n* If no configuration is found, it falls back to the predefined \"csscomb\"\n  configuration that ships with [csscomb.js](https://github.com/csscomb/csscomb.js/blob/master/config/csscomb.json).\n\nYour configuration can be a CSScomb configuration object or the [name of a predefined configuration](https://github.com/csscomb/csscomb.js/tree/master/config).\n\n## Using It\n\nPress `ctrl-alt-c` or choose `Packages -> CSScomb -> Sort` or\n`Edit -> Lines -> Sort with CSScomb`.\n\nYou can limit what CSScomb processes by using selections.\n\nNote: Make sure to select entire CSS rules (selector, braces, and\nproperties; valid CSS), not just the property list.\n\nThe plugin uses the name of the file to determine the syntax\n(css, scss, or less).\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/bruce/atom-csscomb/issues"
+  },
+  "homepage": "https://github.com/bruce/atom-csscomb#readme",
+  "_id": "csscomb@0.3.1",
+  "_shasum": "97415577588e955bbda282f7ee69a79791272a16",
+  "_resolved": "file:../d-115810-86582-ntx0gg/package.tgz",
+  "_from": "../d-115810-86582-ntx0gg/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "csscomb",
+        "version": "3.1.8",
+        "path": "node_modules/csscomb/lib/csscomb.js"
+      },
+      {
+        "name": "commander",
+        "version": "2.0.0",
+        "path": "node_modules/csscomb/node_modules/commander/index.js"
+      },
+      {
+        "name": "csscomb-core",
+        "version": "3.0.0-3.1",
+        "path": "node_modules/csscomb/node_modules/csscomb-core/lib/core.js"
+      },
+      {
+        "name": "minimatch",
+        "version": "0.2.12",
+        "path": "node_modules/csscomb/node_modules/csscomb-core/node_modules/minimatch/minimatch.js"
+      },
+      {
+        "name": "lru-cache",
+        "version": "2.6.5",
+        "path": "node_modules/csscomb/node_modules/csscomb-core/node_modules/minimatch/node_modules/lru-cache/lib/lru-cache.js"
+      },
+      {
+        "name": "sigmund",
+        "version": "1.0.1",
+        "path": "node_modules/csscomb/node_modules/csscomb-core/node_modules/minimatch/node_modules/sigmund/sigmund.js"
+      },
+      {
+        "name": "vow-fs",
+        "version": "0.3.2",
+        "path": "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/lib/fs.js"
+      },
+      {
+        "name": "glob",
+        "version": "3.2.8",
+        "path": "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/glob/glob.js"
+      },
+      {
+        "name": "inherits",
+        "version": "2.0.1",
+        "path": "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/glob/node_modules/inherits/inherits.js"
+      },
+      {
+        "name": "node-uuid",
+        "version": "1.4.0",
+        "path": "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/node-uuid/uuid.js"
+      },
+      {
+        "name": "vow-queue",
+        "version": "0.3.1",
+        "path": "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/vow-queue/lib/queue.js"
+      },
+      {
+        "name": "gonzales-pe",
+        "version": "3.0.0-28",
+        "path": "node_modules/csscomb/node_modules/gonzales-pe/lib/gonzales.js"
+      },
+      {
+        "name": "vow",
+        "version": "0.4.4",
+        "path": "node_modules/csscomb/node_modules/vow/lib/vow.js"
+      },
+      {
+        "name": "season",
+        "version": "5.3.0",
+        "path": "node_modules/season/lib/cson.js"
+      },
+      {
+        "name": "cson-parser",
+        "version": "1.0.9",
+        "path": "node_modules/season/node_modules/cson-parser/lib/cson-parser.js"
+      },
+      {
+        "name": "coffee-script",
+        "version": "1.9.0",
+        "path": "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/lib/coffee-script/coffee-script.js"
+      },
+      {
+        "name": "fs-plus",
+        "version": "2.8.1",
+        "path": "node_modules/season/node_modules/fs-plus/lib/fs-plus.js"
+      },
+      {
+        "name": "async",
+        "version": "0.2.10",
+        "path": "node_modules/season/node_modules/fs-plus/node_modules/async/lib/async.js"
+      },
+      {
+        "name": "mkdirp",
+        "version": "0.3.5",
+        "path": "node_modules/season/node_modules/fs-plus/node_modules/mkdirp/index.js"
+      },
+      {
+        "name": "rimraf",
+        "version": "2.2.8",
+        "path": "node_modules/season/node_modules/fs-plus/node_modules/rimraf/rimraf.js"
+      },
+      {
+        "name": "underscore-plus",
+        "version": "1.6.6",
+        "path": "node_modules/season/node_modules/fs-plus/node_modules/underscore-plus/lib/underscore-plus.js"
+      },
+      {
+        "name": "underscore",
+        "version": "1.6.0",
+        "path": "node_modules/season/node_modules/fs-plus/node_modules/underscore-plus/node_modules/underscore/underscore.js"
+      },
+      {
+        "name": "optimist",
+        "version": "0.4.0",
+        "path": "node_modules/season/node_modules/optimist/index.js"
+      },
+      {
+        "name": "wordwrap",
+        "version": "0.0.3",
+        "path": "node_modules/season/node_modules/optimist/node_modules/wordwrap/index.js"
+      }
+    ],
+    "extensions": {
+      ".coffee": [
+        "lib/csscomb-range-finder.coffee",
+        "lib/csscomb.coffee"
+      ],
+      ".json": [
+        "node_modules/csscomb/config/csscomb.json",
+        "node_modules/csscomb/config/yandex.json",
+        "node_modules/csscomb/config/zen.json",
+        "node_modules/csscomb/node_modules/commander/package.json",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/minimatch/node_modules/lru-cache/package.json",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/minimatch/node_modules/sigmund/package.json",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/minimatch/package.json",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/glob/node_modules/inherits/package.json",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/glob/package.json",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/node-uuid/package.json",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/vow-queue/.jscs.json",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/vow-queue/bower.json",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/vow-queue/package.json",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/package.json",
+        "node_modules/csscomb/node_modules/csscomb-core/package.json",
+        "node_modules/csscomb/node_modules/gonzales-pe/package.json",
+        "node_modules/csscomb/node_modules/vow/package.json",
+        "node_modules/csscomb/package.json",
+        "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/bower.json",
+        "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/package.json",
+        "node_modules/season/node_modules/cson-parser/package.json",
+        "node_modules/season/node_modules/fs-plus/node_modules/async/component.json",
+        "node_modules/season/node_modules/fs-plus/node_modules/async/package.json",
+        "node_modules/season/node_modules/fs-plus/node_modules/mkdirp/package.json",
+        "node_modules/season/node_modules/fs-plus/node_modules/rimraf/package.json",
+        "node_modules/season/node_modules/fs-plus/node_modules/underscore-plus/node_modules/underscore/package.json",
+        "node_modules/season/node_modules/fs-plus/node_modules/underscore-plus/package.json",
+        "node_modules/season/node_modules/fs-plus/package.json",
+        "node_modules/season/node_modules/optimist/node_modules/wordwrap/package.json",
+        "node_modules/season/node_modules/optimist/package.json",
+        "node_modules/season/package.json",
+        "package.json"
+      ],
+      ".js": [
+        "node_modules/csscomb/lib/cli.js",
+        "node_modules/csscomb/lib/csscomb.js",
+        "node_modules/csscomb/lib/format.js",
+        "node_modules/csscomb/lib/gonzales.js",
+        "node_modules/csscomb/lib/options/always-semicolon.js",
+        "node_modules/csscomb/lib/options/block-indent.js",
+        "node_modules/csscomb/lib/options/color-case.js",
+        "node_modules/csscomb/lib/options/color-shorthand.js",
+        "node_modules/csscomb/lib/options/element-case.js",
+        "node_modules/csscomb/lib/options/eof-newline.js",
+        "node_modules/csscomb/lib/options/leading-zero.js",
+        "node_modules/csscomb/lib/options/quotes.js",
+        "node_modules/csscomb/lib/options/remove-empty-rulesets.js",
+        "node_modules/csscomb/lib/options/sort-order-fallback.js",
+        "node_modules/csscomb/lib/options/sort-order.js",
+        "node_modules/csscomb/lib/options/space-after-colon.js",
+        "node_modules/csscomb/lib/options/space-after-combinator.js",
+        "node_modules/csscomb/lib/options/space-after-opening-brace.js",
+        "node_modules/csscomb/lib/options/space-after-selector-delimiter.js",
+        "node_modules/csscomb/lib/options/space-before-closing-brace.js",
+        "node_modules/csscomb/lib/options/space-before-colon.js",
+        "node_modules/csscomb/lib/options/space-before-combinator.js",
+        "node_modules/csscomb/lib/options/space-before-opening-brace.js",
+        "node_modules/csscomb/lib/options/space-before-selector-delimiter.js",
+        "node_modules/csscomb/lib/options/space-between-declarations.js",
+        "node_modules/csscomb/lib/options/strip-spaces.js",
+        "node_modules/csscomb/lib/options/tab-size.js",
+        "node_modules/csscomb/lib/options/unitless-zero.js",
+        "node_modules/csscomb/lib/options/vendor-prefix-align.js",
+        "node_modules/csscomb/node_modules/commander/index.js",
+        "node_modules/csscomb/node_modules/csscomb-core/lib/core.js",
+        "node_modules/csscomb/node_modules/csscomb-core/lib/errors.js",
+        "node_modules/csscomb/node_modules/csscomb-core/lib/format.js",
+        "node_modules/csscomb/node_modules/csscomb-core/lib/plugin.js",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/minimatch/minimatch.js",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/minimatch/node_modules/lru-cache/lib/lru-cache.js",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/minimatch/node_modules/sigmund/bench.js",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/minimatch/node_modules/sigmund/sigmund.js",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/lib/fs.js",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/glob/examples/g.js",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/glob/examples/usr-local.js",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/glob/glob.js",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/glob/node_modules/inherits/inherits.js",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/glob/node_modules/inherits/inherits_browser.js",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/glob/node_modules/inherits/test.js",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/node-uuid/benchmark/benchmark.js",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/node-uuid/uuid.js",
+        "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/vow-queue/lib/queue.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/bin/generate-tests.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/bin/gonzales.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/css/mark.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/css/parse.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/css/stringify.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/css/tokenizer.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/gonzales.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/less/mark.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/less/parse.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/less/stringify.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/less/tokenizer.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/node-types.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/node.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/parse.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/parsing-error.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/sass/mark.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/sass/parse.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/sass/stringify.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/sass/tokenizer.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/scss/mark.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/scss/parse.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/scss/stringify.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/scss/tokenizer.js",
+        "node_modules/csscomb/node_modules/gonzales-pe/lib/token-types.js",
+        "node_modules/csscomb/node_modules/vow/lib/vow.js",
+        "node_modules/csscomb/node_modules/vow/vow.min.js",
+        "node_modules/season/lib/cson.js",
+        "node_modules/season/lib/csonc.js",
+        "node_modules/season/node_modules/cson-parser/lib/cson-parser.js",
+        "node_modules/season/node_modules/cson-parser/lib/parse.js",
+        "node_modules/season/node_modules/cson-parser/lib/stringify.js",
+        "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/lib/coffee-script/browser.js",
+        "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/lib/coffee-script/cake.js",
+        "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/lib/coffee-script/coffee-script.js",
+        "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/lib/coffee-script/command.js",
+        "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/lib/coffee-script/grammar.js",
+        "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/lib/coffee-script/helpers.js",
+        "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/lib/coffee-script/index.js",
+        "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/lib/coffee-script/lexer.js",
+        "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/lib/coffee-script/nodes.js",
+        "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/lib/coffee-script/optparse.js",
+        "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/lib/coffee-script/parser.js",
+        "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/lib/coffee-script/register.js",
+        "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/lib/coffee-script/repl.js",
+        "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/lib/coffee-script/rewriter.js",
+        "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/lib/coffee-script/scope.js",
+        "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/lib/coffee-script/sourcemap.js",
+        "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/register.js",
+        "node_modules/season/node_modules/cson-parser/node_modules/coffee-script/repl.js",
+        "node_modules/season/node_modules/fs-plus/lib/fs-plus.js",
+        "node_modules/season/node_modules/fs-plus/node_modules/async/lib/async.js",
+        "node_modules/season/node_modules/fs-plus/node_modules/mkdirp/examples/pow.js",
+        "node_modules/season/node_modules/fs-plus/node_modules/mkdirp/index.js",
+        "node_modules/season/node_modules/fs-plus/node_modules/rimraf/bin.js",
+        "node_modules/season/node_modules/fs-plus/node_modules/rimraf/rimraf.js",
+        "node_modules/season/node_modules/fs-plus/node_modules/underscore-plus/lib/underscore-plus.js",
+        "node_modules/season/node_modules/fs-plus/node_modules/underscore-plus/node_modules/underscore/underscore-min.js",
+        "node_modules/season/node_modules/fs-plus/node_modules/underscore-plus/node_modules/underscore/underscore.js",
+        "node_modules/season/node_modules/optimist/example/bool.js",
+        "node_modules/season/node_modules/optimist/example/boolean_double.js",
+        "node_modules/season/node_modules/optimist/example/boolean_single.js",
+        "node_modules/season/node_modules/optimist/example/default_hash.js",
+        "node_modules/season/node_modules/optimist/example/default_singles.js",
+        "node_modules/season/node_modules/optimist/example/divide.js",
+        "node_modules/season/node_modules/optimist/example/line_count.js",
+        "node_modules/season/node_modules/optimist/example/line_count_options.js",
+        "node_modules/season/node_modules/optimist/example/line_count_wrap.js",
+        "node_modules/season/node_modules/optimist/example/nonopt.js",
+        "node_modules/season/node_modules/optimist/example/reflect.js",
+        "node_modules/season/node_modules/optimist/example/short.js",
+        "node_modules/season/node_modules/optimist/example/string.js",
+        "node_modules/season/node_modules/optimist/example/usage-options.js",
+        "node_modules/season/node_modules/optimist/example/xup.js",
+        "node_modules/season/node_modules/optimist/index.js",
+        "node_modules/season/node_modules/optimist/node_modules/wordwrap/example/center.js",
+        "node_modules/season/node_modules/optimist/node_modules/wordwrap/example/meat.js",
+        "node_modules/season/node_modules/optimist/node_modules/wordwrap/index.js"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          ""
+        ],
+        "dependencies": {
+          "csscomb": "^3.1.6",
+          "season": "^5.2.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/csscomb/config",
+          "node_modules/csscomb/lib",
+          "node_modules/csscomb/lib/options",
+          "node_modules/csscomb"
+        ],
+        "dependencies": {
+          "commander": "2.0.0",
+          "csscomb-core": "3.0.0-3.1",
+          "gonzales-pe": "3.0.0-28",
+          "vow": "0.4.4"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/csscomb/node_modules/csscomb-core/lib",
+          "node_modules/csscomb/node_modules/csscomb-core",
+          "node_modules/csscomb/node_modules/csscomb-core/test"
+        ],
+        "dependencies": {
+          "gonzales-pe": "3.0.0-28",
+          "minimatch": "0.2.12",
+          "vow": "0.4.4",
+          "vow-fs": "0.3.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/csscomb/node_modules/csscomb-core/node_modules/minimatch",
+          "node_modules/csscomb/node_modules/csscomb-core/node_modules/minimatch/test"
+        ],
+        "dependencies": {
+          "lru-cache": "2",
+          "sigmund": "~1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/lib",
+          "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs",
+          "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/test"
+        ],
+        "dependencies": {
+          "node-uuid": "1.4.0",
+          "vow": "0.4.4",
+          "vow-queue": "0.3.1",
+          "glob": "3.2.8"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/glob/examples",
+          "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/glob",
+          "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/glob/test"
+        ],
+        "dependencies": {
+          "minimatch": "~0.2.11",
+          "inherits": "2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/vow-queue",
+          "node_modules/csscomb/node_modules/csscomb-core/node_modules/vow-fs/node_modules/vow-queue/lib"
+        ],
+        "dependencies": {
+          "vow": "~0.4.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/season/lib",
+          "node_modules/season"
+        ],
+        "dependencies": {
+          "cson-parser": "1.0.9",
+          "fs-plus": "2.x",
+          "optimist": "~0.4.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/season/node_modules/cson-parser/lib",
+          "node_modules/season/node_modules/cson-parser"
+        ],
+        "dependencies": {
+          "coffee-script": "1.9.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/season/node_modules/fs-plus/lib",
+          "node_modules/season/node_modules/fs-plus"
+        ],
+        "dependencies": {
+          "underscore-plus": "1.x",
+          "mkdirp": "~0.3.5",
+          "rimraf": "~2.2.2",
+          "async": "~0.2.9"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/season/node_modules/fs-plus/node_modules/underscore-plus/lib",
+          "node_modules/season/node_modules/fs-plus/node_modules/underscore-plus"
+        ],
+        "dependencies": {
+          "underscore": "~1.6.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/season/node_modules/optimist/example",
+          "node_modules/season/node_modules/optimist",
+          "node_modules/season/node_modules/optimist/test/_",
+          "node_modules/season/node_modules/optimist/test"
+        ],
+        "dependencies": {
+          "wordwrap": "~0.0.2"
+        }
+      }
+    ]
+  }
+}

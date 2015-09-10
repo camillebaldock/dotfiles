@@ -3,8 +3,11 @@
     showIndentGuide: true
     fontFamily: "Menlo"
     invisibles: {}
-    fontSize: 15
+    fontSize: 16
     softWrapAtPreferredLineLength: true
+    confirmCheckoutHeadRevision: false
+  autocomplete:
+    includeCompletionsFromAllBuffers: true
   core:
     ignoredNames: [
       ".bundle"
@@ -31,5 +34,7 @@
     ]
   welcome:
     showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
   "release-notes":
     viewedVersion: "0.89.0"
