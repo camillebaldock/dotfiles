@@ -115,6 +115,32 @@ install_dotfiles () {
   done
 }
 
+setup_computer_name () {
+  if ! [ -f .computername.example ]
+  then
+    info 'setup computer name'
+
+    user "What would you like to call this computer?\n\
+        [1]Red Queen, [2]Hal, [3]Fake Maria"
+    read -e computer_code
+    case "$computer_code" in
+          1 )
+            computer_name="Red Queen";;
+          2 )
+            computer_name="Hal";;
+          3 )
+            computer_name="Fake Maria";;
+          * )
+            ;;
+        esac
+
+    sed -e "s/COMPUTERNAME/$computer_name/g" .computername.example > .computername
+
+    success 'computer name'
+  fi
+}
+
+setup_computer_name
 install_dotfiles
 
 echo ''
