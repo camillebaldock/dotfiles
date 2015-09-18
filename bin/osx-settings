@@ -1,9 +1,8 @@
 #!/bin/sh
 #
-# Sets OS X defaults by running $ZSH/osx/set-defaults.sh.
-
 exec $ZSH/osx/set-defaults.sh
 exec $ZSH/osx/dock-setup.sh
 exec $ZSH/osx/heroku-plugins.sh
 exec $ZSH/git/install-commit-hook.sh
 exec $ZSH/python/pips.sh
+exec $ZSH/npm/install_packages.sh
