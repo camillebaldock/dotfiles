@@ -10,8 +10,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX                                                               #
 ###############################################################################
 
+computer_name=`cat /Users/camillebaldock/.dotfiles/.computername`
+
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "RedQueen"
+sudo scutil --set ComputerName "$computer_name"
 
 # Set highlight color to green
 defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
