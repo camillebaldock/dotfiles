@@ -3,3 +3,4 @@ atom.symlink/.apm/
 atom.symlink/.node-gyp/
 atom.symlink/compile-cache/
 atom.symlink/storage/
+environment.sh
