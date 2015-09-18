@@ -116,7 +116,7 @@ install_dotfiles () {
 }
 
 setup_computer_name () {
-  if ! [ -f .computername.example ]
+  if ! [ -f .computername ]
   then
     info 'setup computer name'
 
