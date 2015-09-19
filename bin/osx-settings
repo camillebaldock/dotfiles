@@ -6,3 +6,4 @@ exec $ZSH/osx/heroku-plugins.sh
 exec $ZSH/git/install-commit-hook.sh
 exec $ZSH/python/pips.sh
 exec $ZSH/npm/install_packages.sh
+exec $ZSH/brew/linkapps.sh
