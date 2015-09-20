@@ -13,7 +13,6 @@ $ZSH/osx/heroku-plugins.sh
 $ZSH/git/install-commit-hook.sh
 $ZSH/python/pips.sh
 $ZSH/npm/install_packages.sh
-$ZSH/brew/linkapps.sh
 
 # Upgrade homebrew
 brew update
