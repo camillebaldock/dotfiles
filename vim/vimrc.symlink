@@ -11,10 +11,8 @@ Plugin 'gmarik/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Plugin 'mileszs/ack.vim'
-Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/Conque-Shell'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'tpope/vim-surround'
 Plugin 'wting/rust.vim'
 Plugin 'tpope/vim-endwise'
 Plugin 'https://github.com/vim-scripts/REPL-plugin'
