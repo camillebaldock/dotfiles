@@ -16,7 +16,7 @@ defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</
 # Add Keynote
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Keynote.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 # Add iTerm
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/iTerm.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/iTerm</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 # Add Atom
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/opt/homebrew-cask/Caskroom/atom/1.0.11/Atom.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 # Add Photos
