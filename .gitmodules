@@ -1,0 +1,6 @@
+[submodule "Align"]
+	path = "vim/vim.symlink/bundle/Align"
+        ignore = dirty
+[submodule "Conque-Shell"]
+	path = "vim/vim.symlink/bundle/Conque-Shell"
+        ignore = dirty
