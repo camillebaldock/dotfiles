@@ -39,3 +39,5 @@
     ignoreWhitespaceOnCurrentLine: false
   "release-notes":
     viewedVersion: "0.89.0"
+  "tree-view":
+    hideVcsIgnoredFiles: true
