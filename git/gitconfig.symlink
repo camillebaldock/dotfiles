@@ -1,5 +1,5 @@
 [hub]
-        protocol = ssh
+        protocol = https
 [user]
         name = camilleldn
         email = camille@camillebaldock.co.uk
